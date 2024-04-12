@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    
+</head>
+<body>
+   
+    
+       <div class="container mt-5 ">
+        
+            <div class="card-img" style="margin-left: 100px;">
+                <img src="thar1.JPEG" alt="" height="400px">
+            </div>
+            <div class="card-img-overlay" style="margin-top: 197px;margin-left: 50px;">
+                <button id="on" onclick="oncolor()">Button on</button>
+            </div>
+            <div class="card-img-overlay " style="margin-top: 197px;margin-left: 449px;"> <i class="fa-solid fa-circle " style="color: rgb(255, 255, 255);font-size: 34px;text-shadow: 10px 5px  10px rgb(150, 150, 175);" id="icon1" ></i> </div>
+            <div class="card-img-overlay " style="margin-top: 197px;margin-left: 635px;"><i class="fa-solid fa-circle " style="color: rgb(255, 252, 252);font-size: 34px;text-shadow: 10px 5px 10px rgb(145, 145, 167);" id="icon2" ></i></div>
+            <div class="card-img-overlay" style="margin-top: 210px;margin-left: 1000px;">  
+                <button  id="off" onclick="offcolor()" >Button off</button>
+            </div>
+       </div>
+    
+
+<script>
+    function oncolor()
+    {
+       x=document.getElementById("icon1");
+       x.style.color='blue';
+       y=document.getElementById("icon2");
+       y.style.color='blue';
+
+    }
+    function offcolor()
+    {
+       x=document.getElementById("icon1");
+       x.style.color='yellow';
+
+       y=document.getElementById("icon2");
+       y.style.color='yellow';
+
+    }
+</script>
+ 
+</body>
+</html>
